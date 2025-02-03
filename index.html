@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,85 @@
         async src="//gc.zgo.at/count.js"></script>
     <title>🧊 Bithus Swap</title>
     <style>
-        .custom-input-field__input::-webkit-input-placeholder {
+    body {
+        
+            align-items: center;
+    }
+      .custom-input-field__input::-webkit-input-placeholder {
             color: transparent;
+        }
+        /* Estilos para a navbar */
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+        }
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-content h1 {
+            margin: 0;
+        }
+
+        /* Estilos para o footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed; /* Fixa o footer na parte inferior da página */
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <!-- centered iframe -->
-    <section class="my-6" id="title">
+
+    <main>
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "description": "Binance",
+      "proName": "BINANCE:BNBUSDT"
+    },
+    {
+      "description": "Tron",
+      "proName": "BINANCE:TRXUSDT"
+    },
+    {
+      "description": "Theter",
+      "proName": "BINANCE:USDTBRL"
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "colorTheme": "dark",
+  "locale": "br"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+        
+        <section class="my-6" id="title">
         <h1 class="title has-text-centered">🧊 Bithus Swap 🧊</h1>
         <h2 class="subtitle has-text-centered">The best, open-source, and zero-fee crypto exchanger</h2>
         <div class="buttons is-centered">
@@ -64,26 +135,96 @@
             </div>
         </div>
     </section>
+        
+         <section class="my-6" id="widget">
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+  {
+  "width": 550,
+  "height": 550,
+  "symbolsGroups": [
+    {
+      "name": "Indices",
+      "originalName": "Indices",
+      "symbols": [
+        {
+          "name": "BINANCE:BTCUSDT",
+          "displayName": "Bitcoin"
+        },
+        {
+          "name": "BINANCE:ETHUSDT",
+          "displayName": "Ethereum"
+        },
+        {
+          "name": "BINANCE:SOLUSDT",
+          "displayName": "Solana"
+        },
+        {
+          "name": "BINANCE:DOGEUSDT",
+          "displayName": "Dogecoin"
+        },
+        {
+          "name": "BINANCE:PEPEUSDT",
+          "displayName": "Pepe"
+        },
+        {
+          "name": "BINANCE:TRUMPUSDT",
+          "displayName": "Trump"
+        },
+        {
+          "name": "BINANCE:BNBUSDT",
+          "displayName": "Binance"
+        },
+        {
+          "name": "BINANCE:SHIBUSDT",
+          "displayName": "Shib"
+        },
+        {
+          "name": "BINANCE:NOTUSDT",
+          "displayName": "Notcoin"
+        },
+        {
+          "name": "BINANCE:TRXUSDT",
+          "displayName": "Tron"
+        },
+        {
+          "name": "BINANCE:NEARUSDT",
+          "displayName": "Near"
+        },
+        {
+          "name": "BINANCE:USDTBRL",
+          "displayName": "Theter"
+        },
+        {
+          "name": "UNISWAP:NOWWETH_9730B0",
+          "displayName": "Now"
+        }
+      ]
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "colorTheme": "dark",
+  "locale": "en",
+  "backgroundColor": "#131722"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+         </section>
+        
+        </main>
 
-    <section class="my-6" id="footer">
-        <div class="container">
-            <div class="columns is-centered">
-                <div class="column is-half">
-                   
-                    
-                    <p class="has-text-centered">Made with by <a href="index.html">Bithus Swap</a></p>
+    <footer>
+        <p>&copy; 2025 Bithus</p>
+    </footer>
 
-                    <div class="buttons is-centered mt-6">
-                        <a href="#" class="button is-primary is-light">
-                            <span class="icon">
-                                <i class="bi bi-arrow-up"></i>
-                            </span>
-                            <span>Back to Top</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <script>
+        // JavaScript para adicionar funcionalidades (opcional)
+    </script>
 </body>
-</html>
+    </html>
+    
